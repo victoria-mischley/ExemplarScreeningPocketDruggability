@@ -3,6 +3,8 @@ Step 1: Generate exemplars- use gen_exemplars.py and use the gen_exemplars modul
 - use python script to generate submit scrips
 - for i in *.sb; do echo 'sbatch '$i''; done > submit.sh
 - split -l 2000 submit.sh (seperates submit.sh into two seperate submit scripts with 2,000 commands each)
+- mv xaa submit1.sh
+- mv xab submit2.sh
 - Bash submit1.sh
 
 
