@@ -16,8 +16,9 @@ This code is for running on Expanse
 - Step 13: Bash submit1.sh
 - Now all exemplars should be located in: "Exemplar_screen/exemplars"
 - Step 14: mv all of the old submit scripts into new folder; "Exemplar_screen/exemplars/exemplar_submit_scripts". mv exemplars/*.sb exemplar_submit_scripts
+- Step 14: remove all files ending in .out or .err within the exemplar folder (speeds up downstream calculations a bit)
 - Step 15: mv all of the Input_PDBs into exemplar folder
-- Step 14:  Make the complex PDB files:- use gen_exemplars.py and use the copy_files module and make_complexes module (just unhastage these two scripts), use submit.slurm to run this.
+- Step 16:  Make the complex PDB files:- use gen_exemplars.py and use the copy_files module and make_complexes module (just unhastage these two scripts), use submit.slurm to run this.
 - Now all of the complexes are located in: "Exemplar_screen/exemplars/complexes"
 
 Step 3: use parallaize_get_exemplar_features.py to make a command list for all of the feature generations. 
