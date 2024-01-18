@@ -11,4 +11,5 @@ Step 1: Generate exemplars- use gen_exemplars.py and use the gen_exemplars modul
 After exemplars are done running: 
 Step 2: Make the complex PDB files:- use gen_exemplars.py and use the copy_files module and make_complexes module
 
+Step 3: use parallaize_get_exemplar_features.py to make a command list for all of the feature generations. 
 
