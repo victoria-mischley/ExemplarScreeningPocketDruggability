@@ -21,9 +21,9 @@ This code is for running on Expanse
 - Step 16:  Make the complex PDB files:- use gen_exemplars.py and use the copy_files module and make_complexes module (just unhastage these two scripts), use submit.slurm to run this.
 - Now all of the complexes are located in: "Exemplar_screen/exemplars/complexes"
 - Step 17: use parallaize_get_exemplar_features.py to make a command list for all of the feature generations. Command list will be located in complex folder. Direct the python script to the folder containing the complexes: python parallize_get_exemplar_features.py /expanse/lustre/projects/was136/vmischley/vmischley_04_28/Exemplar_Screen_01_17/exemplars/complexes/
-- Step 18: Make a folder "Exemplar_screen/feature_submit/scripts"
-- Step 19: copy the command_list_features.txt to "Exemplar_screen/feature_submit/scripts"
-- Step 20: Use feature batch submit to get submit scripts.
+- Step 18: Make a folder "Exemplar_screen/feature_submit_scripts"
+- Step 19: copy the command_list_features.txt to "Exemplar_screen/feature_submit_scripts"
+- Step 20: Use feature_batch_submit.py to get submit scripts.
 - Step 21: for i in *.sb; do echo 'sbatch '$i''; done > submit.sh
 - Step 22: split -l 2000 submit.sh
 - Step 23: mv xaa submit1.sh
