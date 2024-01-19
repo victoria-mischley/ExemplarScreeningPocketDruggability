@@ -28,5 +28,6 @@ This code is for running on Expanse
 - Step 22: split -l 2000 submit.sh
 - Step 23: mv xaa submit1.sh
 - Step 24: mv xab submit2.sh
-- Step 25: 
+- Now each exemplar complex will have a corresponding csv file with the features and predicted activity
+- Step 25: Use combine_csv.py to merge all of the csv files into one csv file. 
 
